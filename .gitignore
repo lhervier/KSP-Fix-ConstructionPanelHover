@@ -1,0 +1,4 @@
+obj/
+GameData/KSPFixConstructionPanelHover/*.dll
+GameData/*.zip
+__pycache__/
