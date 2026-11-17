@@ -3,7 +3,7 @@
     <TargetFramework>net472</TargetFramework>
     <AssemblyName>KSPFixConstructionPanelHover</AssemblyName>
     <RootNamespace>com.github.lhervier.ksp.fix.constructionpanelhover</RootNamespace>
-    <Version>0.1.0</Version>
+    <Version>0.1.0-dev</Version>
     <Description>Keeps a part held in EVA construction mode from staying red for good after the cursor went over the construction panel or a part action window</Description>
     <!-- Straight into the folder that gets copied to the GameData of KSP. -->
     <OutputPath>GameData\KSPFixConstructionPanelHover</OutputPath>
