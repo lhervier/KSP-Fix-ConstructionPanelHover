@@ -1,4 +1,5 @@
 using System;
+using System.Reflection;
 using HarmonyLib;
 using UnityEngine;
 
@@ -16,7 +17,9 @@ namespace com.github.lhervier.ksp.fix.constructionpanelhover
         private void Start()
         {
             Settings.Load();
-            Log.Info($"Version {typeof(KSPFixConstructionPanelHover).Assembly.GetName().Version}, " +
+            string version = typeof(KSPFixConstructionPanelHover).Assembly
+                .GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion;
+            Log.Info($"Version {version}, " +
                 $"hiddenPartContactsReset {Settings.HiddenPartContactsReset}, log level {Log.Level}");
             if (!Settings.HiddenPartContactsReset)
             {
